@@ -2,7 +2,9 @@
 .RData
 .Ruserdata
 .Rproj.user/
+*.Rproj
+.Rapp.history
 *.png
 *.pdf
+*.csv
 .DS_Store
-.Rapp.history

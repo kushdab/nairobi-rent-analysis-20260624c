@@ -1,21 +1,28 @@
-# Nairobi Rental Price Analysis (2021-2026)
+# Nairobi Rent Analysis 2026
 
-This project provides an automated analysis of rental price trends across five major neighborhoods in Nairobi: Westlands, Kilimani, Karen, Langata, and Roysambu.
+This project provides a comprehensive analysis of rental price trends in Nairobi, Kenya, covering the period from January 2021 to June 2026.
 
-## Project Overview
+## Project Structure
+- `analysis.R`: The main R script containing data simulation, cleaning, statistical analysis, and visualization logic.
+- `.gitignore`: Standard R ignore rules.
 
-The analysis covers a 5-year period concluding in June 2026. It utilizes synthetic data modeled on historical Nairobi real estate market behaviors, accounting for annual inflation, neighborhood-specific demand, and seasonal fluctuations.
+## Neighborhoods Covered
+1. **Karen**: High-end residential area.
+2. **Westlands**: Commercial and premium residential hub.
+3. **Kilimani**: Popular middle-to-high income suburb.
+4. **Langata**: Established middle-income residential area.
+5. **Kasarani**: High-growth residential area in the Nairobi outskirts.
 
-## Structure
-- `analysis.R`: The main processing script that generates data, performs statistical analysis, and creates visualizations.
-- `nairobi_rent_trends.png`: Line chart showing price trajectories over time (generated after running script).
-- `annual_comparison.png`: Bar chart comparing annual averages (generated after running script).
+## Analysis Features
+- **Time Series Plotting**: Visualizes the upward trajectory of rents.
+- **CAGR Calculation**: Determines the compound annual growth rate for different sectors of the Nairobi market.
+- **Linear Modeling**: Provides a baseline forecast for rental prices heading into 2027.
+- **Seasonality Tracking**: Accounts for minor fluctuations based on annual moving patterns.
 
 ## Requirements
 - R (version 4.0 or higher)
-- R Packages: `tidyverse`, `lubridate`, `scales`, `broom`
+- Tidyverse suite
+- Broom (for tidy modeling)
 
 ## Usage
-1. Ensure the required libraries are installed: `install.packages(c('tidyverse', 'lubridate', 'scales', 'broom'))`.
-2. Run the script: `source('analysis.R')`.
-3. Review the terminal output for growth coefficients and the generated PNG files for visual insights.
+Run the `analysis.R` script in RStudio to generate the statistical summaries and the trend plot.
